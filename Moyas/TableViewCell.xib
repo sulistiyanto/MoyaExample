@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="261" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Moyas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="261"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="260.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9b8-ci-6VE">
+                        <rect key="frame" x="16" y="19" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ii5-fn-F6i">
+                        <rect key="frame" x="16" y="48" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9b8-ci-6VE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Qrb-iO-gnl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ii5-fn-F6i" secondAttribute="trailing" id="Yqc-qh-E3o"/>
+                    <constraint firstItem="ii5-fn-F6i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="fho-Z1-mNy"/>
+                    <constraint firstItem="ii5-fn-F6i" firstAttribute="top" secondItem="9b8-ci-6VE" secondAttribute="bottom" constant="8" id="iYY-MD-XIu"/>
+                    <constraint firstItem="ii5-fn-F6i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="n3X-15-OTx"/>
+                    <constraint firstItem="9b8-ci-6VE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="oVM-aV-Q9M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ii5-fn-F6i" secondAttribute="trailing" id="oaD-08-aIm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9b8-ci-6VE" secondAttribute="trailing" id="x4E-sX-Zm8"/>
+                    <constraint firstItem="ii5-fn-F6i" firstAttribute="top" secondItem="9b8-ci-6VE" secondAttribute="bottom" constant="8" id="y8d-yD-yZ4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="ii5-fn-F6i" id="7J8-6M-1Q2"/>
+                <outlet property="questionLabel" destination="9b8-ci-6VE" id="UwT-2W-izf"/>
+            </connections>
+            <point key="canvasLocation" x="-86" y="127.5"/>
+        </tableViewCell>
+    </objects>
+</document>
